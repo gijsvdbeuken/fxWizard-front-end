@@ -9,9 +9,6 @@ test("renders Register component correctly", () => {
     </MemoryRouter>
   );
 
-  const form = screen.getByRole("form");
-  expect(form).toBeInTheDocument();
-
   const usernameInput = screen.getByLabelText("Username:");
   expect(usernameInput).toBeInTheDocument();
 

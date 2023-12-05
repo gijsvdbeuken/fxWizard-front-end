@@ -92,7 +92,7 @@ const Register = () => {
         <section>
           <h1>Success!</h1>
           <p>
-            <a href="#">Sign In</a>
+            <a href="https://www.google.com">Sign In</a>
           </p>
         </section>
       ) : (
@@ -105,7 +105,7 @@ const Register = () => {
             {errMsg}
           </p>
           <h1>Register</h1>
-          <form role="form" onSubmit={handleSubmit}>
+          <form onSubmit={handleSubmit}>
             <label htmlFor="username">
               Username:
               <FontAwesomeIcon

@@ -1,11 +1,6 @@
 import { useRef, useState, useEffect } from "react";
 import useAuth from "../hooks/useAuth";
-import {
-  Link,
-  useNavigate,
-  useLocation,
-  BrowserRouter as Router,
-} from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 
 import axios from "../api/axios";
 const LOGIN_URL = "/auth";
@@ -48,7 +43,7 @@ const Login = () => {
       //console.log(JSON.stringify(response));
       const accessToken = response?.data?.accessToken;
       const roles = response?.data?.roles;
-      //setAuth({ user, pwd, roles, accessToken });
+      setAuth({ user, pwd, roles, accessToken });
       setUser("");
       setPwd("");
       navigate(from, { replace: true });

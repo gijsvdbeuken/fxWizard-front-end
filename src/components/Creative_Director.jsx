@@ -13,4 +13,4 @@ const Creative_Director = () => {
   );
 };
 
-export default Editor;
+export default Creative_Director;

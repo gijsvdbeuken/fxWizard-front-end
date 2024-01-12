@@ -14,6 +14,7 @@ import { Routes, Route } from "react-router-dom";
 const ROLES = {
   User: 2001,
   Editor: 1984,
+  Creative_Director: 2003,
   Admin: 5150,
 };
 
@@ -32,8 +33,11 @@ function App() {
           <Route path="/" element={<Home />} />
         </Route>
 
-        <Route element={<RequireAuth allowedRoles={[ROLES.Editor]} />}>
+        <Route element={<RequireAuth allowedRoles={[ROLES.Editor, ROLES.Creative_Director]} />}>
           <Route path="editor" element={<Editor />} />
+        </Route>
+        <Route element={<RequireAuth allowedRoles={[ROLES.Creative_Director]} />}>
+          <Route path="creative_director" element={<Creative_Director />} />
         </Route>
 
         <Route element={<RequireAuth allowedRoles={[ROLES.Admin]} />}>

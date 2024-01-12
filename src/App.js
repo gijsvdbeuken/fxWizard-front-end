@@ -45,7 +45,7 @@ function App() {
         </Route>
 
         <Route
-          element={<RequireAuth allowedRoles={[ROLES.Editor, ROLES.Admin]} />}
+          element={<RequireAuth allowedRoles={[ROLES.Creative_Director, ROLES.Editor, ROLES.Admin]} />}
         >
           <Route path="lounge" element={<Lounge />} />
         </Route>

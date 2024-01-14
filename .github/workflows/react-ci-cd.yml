@@ -34,4 +34,3 @@ jobs:
     steps:
       - name: Deploy to hosting service
         run: |
-          # Add deployment steps here

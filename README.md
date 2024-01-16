@@ -6,7 +6,7 @@ _Made by Gijs van den Beuken_
 
 - [Introduction](#introduction)
 - [Technologies Used](#technologies-used)
-- [Installation](#installation)
+- [Setup](#setup)
 - [Usage](#usage)
 - [Unit Tests](#unit-tests)
 
@@ -16,23 +16,22 @@ This repository houses the user interface for our tailored script designed for A
 
 ## Technologies Used <a name="technologies-used"></a>
 
-- React
+- ReactJS
 - Axios
-- CSS Modules
 - Vite
 - Vitest
 
-## Installation <a name="installation"></a>
+## Setup <a name="setup"></a>
 
 1. Clone the repository:
 
-```javascript
+```
 git clone https://github.com/gijsvdbeuken/fxWizard-front-end.git
 ```
 
 2. Install dependencies:
 
-```javascript
+```
 cd fxWizard-front-end
 npm i
 ```
@@ -41,7 +40,7 @@ npm i
 
 1. start development server:
 
-```javascript
+```
 npm start
 ```
 
@@ -51,6 +50,6 @@ npm start
 
 1. Run tests using Vitest:
 
-```javascript
+```
 npm test
 ```

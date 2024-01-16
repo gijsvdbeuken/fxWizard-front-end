@@ -32,6 +32,7 @@
     ],
     "jsx-a11y/no-redundant-roles": [
       "error"
-    ]
+    ],
+    "no-unused-vars": "off"
   }
 }

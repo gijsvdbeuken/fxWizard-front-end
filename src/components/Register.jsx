@@ -58,6 +58,7 @@ const Register = () => {
       return;
     }
     try {
+      /* eslint-disable no-unused-vars */
       const response = await axios.post(
         REGISTER_URL,
         JSON.stringify({ user, pwd }),
